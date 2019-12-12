@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent implements OnInit {
-
+  focus;
+  focus1;
+  focus2;
+  focus3;
   constructor() { }
 
   ngOnInit() {
