@@ -1,0 +1,827 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/scss/bootstrap';
+
+
+.bg-gradient-primary {
+  background-color: #4e73df;
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.bg-secondary {
+  background-color: #f7fafc!important
+}
+
+a.bg-secondary:focus,
+a.bg-secondary:hover,
+button.bg-secondary:focus,
+button.bg-secondary:hover {
+  background-color: #d2e3ee!important
+}
+
+.bg-gradient-default {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%)!important
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width: 540px
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 720px
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    max-width: 960px
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px
+  }
+}
+
+// Circle sections
+.section-shaped {
+  //margin: 180px 0;
+  position: relative;
+
+  .stars-and-coded{
+    margin-top: 8rem;
+  }
+
+
+  .shape-skew {
+    transform: skewY(-4deg);
+    transform-origin: 0;
+
+    span {
+      transform: skew(4deg);
+    }
+  }
+
+  // Color variations
+  .shape-primary {
+    background: linear-gradient(150deg, shapes-primary-color("step-1-gradient-bg") 15%, shapes-primary-color("step-2-gradient-bg") 70%, shapes-primary-color("step-3-gradient-bg") 94%);
+
+    :nth-child(1) {
+      background: shapes-primary-color("span-1-bg");
+    }
+
+    :nth-child(2) {
+      background: shapes-primary-color("span-2-bg");
+    }
+
+    :nth-child(3) {
+      background: shapes-primary-color("span-3-bg");
+    }
+
+    :nth-child(4) {
+      background: shapes-primary-color("span-4-bg");
+    }
+
+    :nth-child(5) {
+      background: shapes-primary-color("span-5-bg");
+    }
+  }
+
+  .shape-default {
+    background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
+
+    :nth-child(1) {
+      background: shapes-default-color("span-1-bg");
+    }
+
+    :nth-child(2) {
+      background: shapes-default-color("span-2-bg");
+    }
+
+    :nth-child(3) {
+      background: shapes-default-color("span-3-bg");
+    }
+
+    :nth-child(4) {
+      background: shapes-default-color("span-4-bg");
+    }
+
+    :nth-child(5) {
+      background: shapes-default-color("span-5-bg");
+    }
+  }
+
+  .shape-light {
+    background: linear-gradient(150deg, shapes-light-color("step-1-gradient-bg") 15%, shapes-light-color("step-2-gradient-bg") 70%, shapes-light-color("step-3-gradient-bg") 94%);
+
+    :nth-child(1) {
+      background: shapes-light-color("span-1-bg");
+    }
+
+    :nth-child(2) {
+      background: shapes-light-color("span-2-bg");
+    }
+
+    :nth-child(3) {
+      background: shapes-light-color("span-3-bg");
+    }
+
+    :nth-child(4) {
+      background: shapes-light-color("span-4-bg");
+    }
+
+    :nth-child(5) {
+      background: shapes-light-color("span-5-bg");
+    }
+  }
+
+  .shape-dark {
+    background: linear-gradient(150deg, shapes-dark-color("step-1-gradient-bg") 15%, shapes-dark-color("step-2-gradient-bg") 70%, shapes-dark-color("step-3-gradient-bg") 94%);
+
+    :nth-child(1) {
+      background: shapes-dark-color("span-1-bg");
+    }
+
+    :nth-child(2) {
+      background: shapes-dark-color("span-2-bg");
+    }
+
+    :nth-child(3) {
+      background: shapes-dark-color("span-3-bg");
+    }
+
+    :nth-child(4) {
+      background: shapes-dark-color("span-4-bg");
+    }
+
+    :nth-child(5) {
+      background: shapes-dark-color("span-5-bg");
+    }
+  }
+
+  .shape-style-1 {
+    span {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    .span-200 {
+      height: 200px;
+      width: 200px;
+    }
+
+    .span-150 {
+      height: 150px;
+      width: 150px;
+    }
+
+    .span-100 {
+      height: 100px;
+      width: 100px;
+    }
+
+    .span-75 {
+      height: 75px;
+      width: 75px;
+    }
+
+    .span-50 {
+      height: 50px;
+      width: 50px;
+    }
+
+    :nth-child(1) {
+      left: -4%;
+      bottom: auto;
+      background: rgba(255, 255, 255, .1);
+    }
+
+    :nth-child(2) {
+      right: 4%;
+      top: 10%;
+      background: rgba(255, 255, 255, .1);
+    }
+
+    :nth-child(3) {
+      top: 280px;
+      right: 5.66666%;
+      background: rgba(255, 255, 255, .3);
+    }
+
+    :nth-child(4) {
+      top: 320px;
+      right: 7%;
+      background: rgba(255, 255, 255, .15);
+    }
+
+    :nth-child(5) {
+      top: 38%;
+      left: 1%;
+      right: auto;
+      background: rgba(255, 255, 255, .05);
+    }
+
+    :nth-child(6) {
+      width: 200px;
+      height: 200px;
+      top: 44%;
+      left: 10%;
+      right: auto;
+      background: rgba(255, 255, 255, .15);
+    }
+
+    :nth-child(7) {
+      bottom: 50%;
+      right: 36%;
+      background: rgba(255, 255, 255, .04);
+    }
+
+    :nth-child(8) {
+      bottom: 70px;
+      right: 2%;
+      background: rgba(255, 255, 255, .2);
+    }
+
+    :nth-child(9) {
+      bottom: 1%;
+      right: 2%;
+      background: rgba(255, 255, 255, .1);
+    }
+
+    :nth-child(10) {
+      bottom: 1%;
+      left: 1%;
+      right: auto;
+      background: rgba(255, 255, 255, .05);
+    }
+
+    @include media-breakpoint-down(md) {
+      span {
+        height: 120px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      span {
+        height: 90px;
+      }
+    }
+
+    // shape color variations
+    &.shape-primary {
+      background: linear-gradient(150deg, shapes-primary-color("step-1-gradient-bg") 15%, shapes-primary-color("step-2-gradient-bg") 70%, shapes-primary-color("step-3-gradient-bg") 94%);
+    }
+
+    &.shape-default {
+      background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
+    }
+
+    &.shape-light {
+      background: linear-gradient(150deg, shapes-light-color("step-1-gradient-bg") 15%, shapes-light-color("step-2-gradient-bg") 70%, shapes-light-color("step-3-gradient-bg") 94%);
+
+    }
+
+    &.shape-dark {
+      background: linear-gradient(150deg, shapes-dark-color("step-1-gradient-bg") 15%, shapes-dark-color("step-2-gradient-bg") 70%, shapes-dark-color("step-3-gradient-bg") 94%);
+    }
+  }
+
+  // Styles - works with a color variation class (e.g shapes-default)
+  .shape-style-2 {
+    span {
+      height: 190px;
+    }
+
+    .span-sm {
+      height: 100px;
+    }
+
+    :nth-child(1) {
+      width: 33.33333%;
+      top: 0;
+      left: -16.66666%;
+    }
+
+    :nth-child(2) {
+      width: 33.33333%;
+      top: 0;
+      left: 16.66666%;
+      right: auto;
+    }
+
+    :nth-child(3) {
+      width: 33.33333%;
+      left: 49.99999%;
+      bottom: auto;
+    }
+
+    :nth-child(4) {
+      width: 33.33333%;
+      top: 55%;
+      right: -16.66666%;
+    }
+
+    :nth-child(5) {
+      width: 33.33333%;
+      bottom: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      span {
+        height: 120px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      span {
+        height: 90px;
+      }
+    }
+  }
+
+  .shape-style-3 {
+    span {
+      height: 140px;
+    }
+
+    .span-sm {
+      height: 100px;
+    }
+
+    :nth-child(1) {
+      width: 66%;
+      left: -16.66666%;
+      bottom: auto;
+    }
+
+    :nth-child(2) {
+      width: 40%;
+      top: 54%;
+      //height: 320px;
+      right: -16.66666%;
+    }
+
+    :nth-child(3) {
+      width: 33.33333%;
+      top: 34%;
+      left: -16.66666%;
+      right: auto;
+    }
+
+    :nth-child(4) {
+      width: 60%;
+      bottom: 0;
+      right: -16.66666%;
+      opacity: .6;
+    }
+
+    :nth-child(5) {
+      width: 33.33333%;
+      bottom: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      span {
+        height: 120px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      span {
+        height: 90px;
+      }
+    }
+  }
+
+}
+
+.section {
+  position: relative;
+  padding-top: $spacer * 4;
+  padding-bottom: $spacer * 4;
+}
+
+.section-xl {
+  padding-top: $spacer * 8;
+  padding-bottom: $spacer * 8;
+}
+
+.section-lg {
+  padding-top: $spacer * 6;
+  padding-bottom: $spacer * 6;
+}
+
+.section-sm {
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
+}
+
+.shape {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  span {
+    position: absolute;
+  }
+
+  +.container {
+    position: relative;
+    // padding-top: 6rem;
+    // padding-bottom: 0rem;
+    height: 100%;
+  }
+
+  &.shape-skew {
+
+    +.container {
+      padding-top: 0;
+
+      .col {
+        margin-top: -100px;
+      }
+    }
+
+    + .shape-container {
+      padding-top: 18rem;
+      padding-bottom: 19rem;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  position: relative;
+  text-transform: uppercase;
+  transition: all .15s ease;
+  will-change: transform;
+  letter-spacing: .025em;
+  font-size: .875rem;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
+}
+
+.btn:not(:last-child) {
+  margin-right: .5rem
+}
+
+.btn i:not(:first-child),
+.btn svg:not(:first-child) {
+  margin-left: .5rem
+}
+
+.btn i:not(:last-child),
+.btn svg:not(:last-child) {
+  margin-right: .5rem
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+  .btn {
+    transition: none
+  }
+}
+
+.btn:focus,
+.btn:hover {
+  text-decoration: none
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
+}
+
+.btn.disabled,
+.btn:disabled {
+  opacity: .65;
+  box-shadow: none
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer
+}
+
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+  box-shadow: none
+}
+
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08), none;
+}
+
+.btn-wrapper {
+  margin-top: 3rem
+}
+
+
+.btn-neutral {
+  color: #212529;
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
+}
+
+.btn-neutral:hover {
+  color: #212529;
+  border-color: #fff;
+  background-color: #fff
+}
+
+.btn-neutral.focus,
+.btn-neutral:focus {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08), 0 0 0 0 rgba(255, 255, 255, .5)
+}
+
+.btn-neutral.disabled,
+.btn-neutral:disabled {
+  color: #212529;
+  border-color: #fff;
+  background-color: #fff
+}
+
+.btn-neutral:not(:disabled):not(.disabled).active,
+.btn-neutral:not(:disabled):not(.disabled):active,
+.show>.btn-neutral.dropdown-toggle {
+  color: #212529;
+  border-color: #fff;
+  background-color: #e6e6e6
+}
+
+.btn-neutral:not(:disabled):not(.disabled).active:focus,
+.btn-neutral:not(:disabled):not(.disabled):active:focus,
+.show>.btn-neutral.dropdown-toggle:focus {
+  box-shadow: none, 0 0 0 0 rgba(255, 255, 255, .5)
+}
+
+.btn-inner--icon {
+  i:not(.fa) {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.btn-icon-label {
+  position: relative;
+
+  .btn-inner--icon {
+    position: absolute;
+    height: 100%;
+    line-height: 1;
+    border-radius: 0;
+    text-align: center;
+    margin: 0;
+    width: 3em;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  .btn-inner--icon:not(:first-child) {
+    right: 0;
+    top: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+  .btn-inner--icon:not(:last-child) {
+    left: 0;
+    top: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  .btn-inner--icon svg {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .btn-inner--text:not(:first-child) {
+    padding-left: 3em;
+  }
+  .btn-inner--text:not(:last-child) {
+    padding-right: 3em;
+  }
+}
+
+.btn-icon {
+  .btn-inner--icon {
+    img {
+      width: 20px;
+    }
+  }
+  .btn-inner--text:not(:first-child) {
+    margin-left: .75em;
+  }
+  .btn-inner--text:not(:last-child) {
+    margin-right: .75em;
+  }
+}
+
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none
+}
+
+//Custom styling for checkbox and radio input
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.75rem
+}
+
+.custom-control-inline {
+  display: inline-flex;
+  margin-right: 1rem
+}
+
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  background-color: #5e72e4;
+  box-shadow: none
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: none
+}
+
+.custom-control-input:active~.custom-control-label::before {
+  color: #fff;
+  background-color: #5e72e4;
+  box-shadow: none
+}
+
+.custom-control-input:disabled~.custom-control-label {
+  color: #8898aa
+}
+
+.custom-control-input:disabled~.custom-control-label::before {
+  background-color: #e9ecef
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0
+}
+
+.custom-control-label::before {
+  position: absolute;
+  top: .125rem;
+  left: -1.75rem;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  content: '';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: #fff;
+  box-shadow: none
+}
+
+.custom-control-label::after {
+  position: absolute;
+  top: .125rem;
+  left: -1.75rem;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: .25rem
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #5e72e4
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath fill="%23fff" d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z"/%3E%3C/svg%3E')
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
+  background-color: #5e72e4;
+  box-shadow: none
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4"%3E%3Cpath stroke="%23fff" d="M0 2h4"/%3E%3C/svg%3E')
+}
+
+.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
+  background-color: rgba(94, 114, 228, .5)
+}
+
+.custom-checkbox .custom-control-input:disabled:indeterminate~.custom-control-label::before {
+  background-color: rgba(94, 114, 228, .5)
+}
+
+.custom-radio .custom-control-label::before {
+  border-radius: 50%
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+  background-color: #5e72e4
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 8 8"%3E%3Ccircle r="3" fill="%23fff"/%3E%3C/svg%3E')
+}
+
+.custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
+  background-color: rgba(94, 114, 228, .5)
+}
+
+.input-group-alternative {
+  transition: box-shadow .15s ease;
+  border: 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02)
+}
+
+.input-group-alternative .form-control,
+.input-group-alternative .input-group-text {
+  border: 0;
+  box-shadow: none
+}
+
+.focused .input-group-alternative {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)!important
+}
+
+.focused .input-group {
+  box-shadow: none
+}
+
+.focused .input-group-text {
+  color: #8898aa;
+  border-color: rgba(50, 151, 211, .25);
+  background-color: #fff
+}
+
+.focused .form-control {
+  border-color: rgba(50, 151, 211, .25)
+}
+
+.card-header {
+  margin-bottom: 0;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  background-color: #fff
+}
+
+.card-header:first-child {
+  border-radius: calc(.375rem - 1px) calc(.375rem - 1px) 0 0
+}
+
+.card-header+.list-group .list-group-item:first-child {
+  border-top: 0
+}
+
+.text-light {
+  color: #adb5bd!important
+}
+
+a.text-light:focus,
+a.text-light:hover {
+  color: #919ca6!important
+}
+
+
+
